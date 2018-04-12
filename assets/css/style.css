@@ -1,0 +1,181 @@
+body {
+    background-image: url(../images/fabric_of_squares_gray.png);
+    background-size: 100% auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    margin: 0 auto;
+    background-color: white;
+    border-bottom: 5px #9099A2 solid;
+}
+
+.header {
+    float: left;
+    height: 60px;
+    width: 200px;
+    background-color: #dcb8ba;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    margin-left: 130px;
+}
+
+.nav {
+    float: right;
+    height: 60px;
+    width: 50%;
+    text-align: right;
+    color: #9099A2;
+    padding-top: 15px;
+    margin-right: 171px;
+}
+
+#portfolio {
+    border-left: 1px #dcb8ba solid;
+    border-right: 1px #dcb8ba solid;
+    padding-right: 5px; 
+    padding-left: 5px;
+}
+
+#contact {
+    padding-left: 5px;
+}
+
+#about {
+    padding-right: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+section {
+    width: 960px;
+    height: 550px;
+    margin-left: 130px;
+    background-color: white;
+    margin-top: 30px;
+    border: 1px solid #9099A2;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.content {
+    color: #dcb8ba;
+    margin-bottom: 25px;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-left: 20px;
+    border-bottom: 1px solid #9099A2;
+}
+
+#profilepicture {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 50px;
+    padding-right: 40px;
+}
+
+.paragraph {
+    color: #9099A2;
+    font-size: 10px;
+    margin-right: 50px;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.portfolio-image {
+    position: static;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.portfolio-name {
+    position: absolute;
+    z-index: 3;
+    background-color: #6D7993;
+    color: white;
+    width: 150px;
+    text-align: center;
+    top: 100px;
+    bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    height: 5px;
+}
+
+.information {
+   padding-left: 80px;
+}
+
+label {
+    color: #9099A2;
+}
+
+input[type=text] {
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #9099A2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+}
+
+textarea {
+    height: 150px;
+    width: 90%;
+    padding: 12px;
+        border: 1px solid #9099A2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #9099A2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(122, 129, 145);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #9099A2;
+    color: white;
+    text-align: center;
+    border-top: 5px #dcb8ba solid;
+}
+
+.copytext {
+    margin-top: 40px;
+    font-size: 15px;
+}
