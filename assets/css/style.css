@@ -1,181 +1,214 @@
 body {
-    background-image: url(../images/fabric_of_squares_gray.png);
-    background-size: 100% auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header {
-    margin: 0 auto;
-    background-color: white;
-    border-bottom: 5px #9099A2 solid;
-}
-
-.header {
-    float: left;
-    height: 60px;
-    width: 200px;
-    background-color: #dcb8ba;
+    font-size: 18px;
+    line-height: 34px;
     color: white;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 15px;
-    margin-left: 130px;
+    background: url("../images/texturetastic_gray.png")
 }
+/* general */
 
-.nav {
-    float: right;
-    height: 60px;
-    width: 50%;
-    text-align: right;
-    color: #9099A2;
-    padding-top: 15px;
-    margin-right: 171px;
-}
-
-#portfolio {
-    border-left: 1px #dcb8ba solid;
-    border-right: 1px #dcb8ba solid;
-    padding-right: 5px; 
-    padding-left: 5px;
-}
-
-#contact {
-    padding-left: 5px;
-}
-
-#about {
-    padding-right: 5px;
-}
-
-.clearfix {
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     clear: both;
 }
 
-section {
-    width: 960px;
-    height: 550px;
-    margin-left: 130px;
-    background-color: white;
-    margin-top: 30px;
-    border: 1px solid #9099A2;
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, 
+h2,
+h3,
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 70;
+    color: black;
 }
 
 h1 {
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid black;
+    
 }
 
-.content {
-    color: #dcb8ba;
-    margin-bottom: 25px;
-    font-size: 25px;
-    padding-top: 25px;
-    padding-left: 20px;
-    border-bottom: 1px solid #9099A2;
+h2,
+h3 {
+    font-size: 22px;
+}
+/* header */
+
+#masterHead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    background: white;
+    border-bottom: 2px solid black;
 }
 
-#profilepicture {
-    width: 300px;
-    height: 300px;
+#logo {
     float: left;
-    margin-left: 55px;
-    margin-top: 50px;
-    padding-right: 40px;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 70px;
+    line-height: 90px;
+    color: #fff;
+    text-align: center;
+    background: black;
 }
 
-.paragraph {
-    color: #9099A2;
-    font-size: 10px;
-    margin-right: 50px;
-    margin-top: 70px;
-    font-size: 20px;
+nav {
+    float: right;
+    margin-top: 25px;
 }
 
-.portfolio-item {
+nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: black;
+    border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background: black;
+    border-top: 8px solid white;
+    height: 50px;
+}
+
+h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid black;
+}
+
+/* main */
+
+#main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+}
+
+.main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: white;
+    border: 3px double black;
+}
+
+/* portfolio page */
+
+.work {
     position: relative;
     float: left;
-    margin-left: 40px;
-    margin-top: 30px;
-    padding: 10px;
-}
-
-.portfolio-image {
-    position: static;
-    display: block;
-    width: 150px;
-    height: 150px;
-}
-
-.portfolio-name {
-    position: absolute;
-    z-index: 3;
-    background-color: #6D7993;
-    color: white;
-    width: 150px;
-    text-align: center;
-    top: 100px;
-    bottom: 20px;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    height: 5px;
-}
-
-.information {
-   padding-left: 80px;
-}
-
-label {
-    color: #9099A2;
-}
-
-input[type=text] {
-        width: 90%;
-        padding: 12px;
-        border: 1px solid #9099A2;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-}
-
-textarea {
-    height: 150px;
-    width: 90%;
-    padding: 12px;
-        border: 1px solid #9099A2;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #9099A2;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: rgb(122, 129, 145);
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    width: 274px;
+    margin: 20px 25px 25px;
+    overflow: auto;
+  }
+  
+  .work img {
     width: 100%;
-    height: 70px;
-    background-color: #9099A2;
-    color: white;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
     text-align: center;
-    border-top: 5px #dcb8ba solid;
-}
+    background: black;
+    border-bottom: 0;
+  }
+  
+  .professionalPic {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  
+  /* contact page */
 
-.copytext {
-    margin-top: 40px;
-    font-size: 15px;
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    height: 200px;
+    padding-top: 10px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: black;
+    border: 0 none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  input:hover {
+    opacity: 0.7;
 }
+  

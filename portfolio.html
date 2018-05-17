@@ -1,75 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> Halle's Basic Portfolio </title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <title> Portfolio | Name </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header"> Halle Conger </div>
 
-        <nav class="nav">
-            <a href="index.html" id="about"> About </a>
-            <a href="portfolio.html" id="portfolio"> Portfolio </a>
-            <a href="contact.html" id="contact"> Contact </a>
-        </nav>
-
-        <div class="clearfix"></div>
+    <header id="masterHead">
+        <div class="container">
+            <a href="index.html" id="logo"> Halle Conger </a>
+            <nav>
+                <a href="index.html"> About </a>
+                <a href="portfolio.html"> Portfolio </a>
+                <a href="contact.html"> Contact </a>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <div class="content">
+    <div id="main-container" class="container">
+        <section class="main-section">
             <h1> Portfolio </h1>
-        </div>
 
-        <div class="portfolio-item">
-            <img src="http://lorempixel.com/125/125/technics/1/cc" class="portfolio-image" alt="Picture 1">
-            <p class="portfolio-name">
-                Hangman
-            </p>
-        </div>
-        <div class="portfolio-item">
-            <img src="http://lorempixel.com/125/125/technics/2/cc" class="portfolio-image" alt="Picture 2">
-            <p class="portfolio-name">
-                RPG Game
-            </p>
-        </div>
+            <div class="work">
+                <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
 
-        <div class="portfolio-item">
-            <img src="http://lorempixel.com/125/125/technics/5/cc" class="portfolio-image" alt="Picture 3">
-            <p class="portfolio-name">
-                Trivia Game
-            </p>
-        </div>
+                <h3>Word Guess</h3>
+            </div>
 
-        <div class="clearfix"></div>
+            <div class="work">
+                <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
 
-        <div class="portfolio-item">
-            <img src="http://lorempixel.com/125/125/technics/7/cc" class="portfolio-image" alt="Picture 4">
-            <p class="portfolio-name">
-                Rutgers Info Widget
-            </p>
-        </div>
+                <h3>RPG Game</h3>
+            </div>
 
-        <div class="portfolio-item">
-            <img src="http://lorempixel.com/125/125/technics/4/cc" class="portfolio-image" alt="Picture 5">
-            <p class="portfolio-name">
-                Rock Paper Scissors
-            </p>
-        </div>
+            <div class="work">
+                <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
 
-        <div class="clearfix"></div>
+                <h3>Trivia Game</h3>
+            </div>
 
-    </section>
+            <div class="work">
+                <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
 
-    <div class="footer">
-        <footer>
-            <p class="copytext"> Copyright Halle Conger ©</p>
-        </footer>
+                <h3>Rutgers Info Widget</h3>
+            </div>
+
+            <div class="work">
+                <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+
+                <h3>Rock Paper Scissors</h3>
+            </div>
+
+        </section>
     </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
+    </footer>
+
 </body>
 
 </html>

@@ -1,68 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> Halle's Basic Portfolio </title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <title> Contact | Halle Conger </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header"> Halle Conger </div>
-
-        <nav class="nav">
-            <a href="index.html" id="about"> About </a>
-            <a href="portfolio.html" id="portfolio"> Portfolio </a>
-            <a href="contact.html" id="contact"> Contact </a>
-        </nav>
-
-        <div class="clearfix"></div>
+    
+    <header id="masterHead">
+        <div class="container">
+            <a href="index.html" id="logo"> Halle Conger </a>
+            <nav>
+                <a href="index.html"> About </a>
+                <a href="portfolio.html"> Portfolio </a>
+                <a href="contact.html"> Contact </a>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <div class="content">
+    <div id="main-container" class="container">
+        <section class="main-section">
             <h1> Contact </h1>
-        </div>
 
-        <div class="information">
-            <label for="name"> Name </label>
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name"> Name </label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email"> Email </label>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message"> Message </label>
+                        <textarea type="text" id="message" name="message" placeholder="Enter Message Here" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
+            </form>
 
-            <br>
-
-            <input type="text" id="name" name="name" placeholder="John Smith">
-
-            <br>
-            <br>
-
-            <label for="email"> Email </label>
-
-            <br>
-
-            <input type="text" id="email" name="email" placeholder="example@gmail.com">
-
-            <br>
-            <br>
-
-            <label for="message"> Message </label>
-
-            <br>
-
-            <textarea id="message" name="message" placeholder="Type message here...">
-                </textarea>
-
-            <br>
-            <br>
-
-            <input type="submit" value="Submit">
-        </div>
-    </section>
-
-    <div class="footer">
-        <footer>
-            <p class="copytext"> Copyright Halle Conger ©</p>
-        </footer>
+        </section>
     </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
+    </footer>
 </body>
 
 </html>
